@@ -11,6 +11,7 @@ body{
   background-size: 100% 100%;
   text-align:center;
   padding-top: 60px;
+  padding-bottom: 250px;
 }
 
 .container{
@@ -25,6 +26,7 @@ body{
   width: 300px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 20px;
 }
 
 h1{
@@ -58,10 +60,13 @@ hr{
   margin-top: 5px;
   border:solid #DFB6B2;
   text-align: start;
+  font-size: 20px;
 }
 
-.add-task input:active{
-  border: solid #522B5B;
+.add-task input:focus{
+  outline: solid #522B5B;
+  caret-color: #522B5B;
+  padding-left: 10px;
 }
 
 .add-task i{
@@ -69,15 +74,16 @@ hr{
   color: #DFB6B2;
   border-radius: 10px;
   width: 5%;
-  height: 40px;
-  padding-top: 10px;
+  height: 20px;
+  font-size: 10px;
+  padding-top: 5px;
   cursor: pointer;
   transition: transform 0.5s;
 }
 
 .add-task i:hover{
   background-color: #854F6C;
-  transform: skew(-2deg,-2deg);
+  transform:translate(5px);
 }
 
 .task-content{
@@ -113,6 +119,10 @@ hr{
 
 }
 
+.task-box:hover{
+  cursor: pointer;
+}
+
 .delete{
   position: absolute;
   top: 7px;
@@ -125,9 +135,11 @@ hr{
 
 .delete:hover{
   background-color: rgba(153, 49, 49, 0.877);
-  cursor: pointer;
 }
 
+.checked{
+  text-decoration: line-through;
+}
 .tasks-status{
   display: flex;
   justify-content: space-between;
@@ -176,6 +188,12 @@ hr{
 
   .delete{
     left: 90%;
+  }
+
+  .add-task i{
+    height: 40px;
+    font-size: 20px;
+    padding-top: 10px;
   }
 }
 /* Large devices (desktops, 992px and up) */
