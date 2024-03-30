@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body{
+  background-image: linear-gradient(#190019, #2B124C,#522B5B,#854F6C,#DFB6B2,#FBE4D8);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  text-align:center;
+  padding-top: 60px;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+#list{
+  border: solid #FBE4D8;
+  background-color: #FBE4D8;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  color: #522B5B;
+  font-weight: bolder;
+}
+
+h2{
+  color:#854F6C;
+  font-weight:normal;
+}
+
+hr{
+  margin-left: auto;
+  margin-right: auto;
+  color: #522B5B;
+  height: 3px;
+  background-color: #522B5B;
+}
+
+.inner-todo{
+  background-color: #854f6c33;
+  padding: 5px;
+}
+
+.add-task input{
+  background-color: #854f6cc4;
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 5px;
+  border:solid #DFB6B2;
+  text-align: start;
+}
+
+.add-task input:active{
+  border: solid #522B5B;
+}
+
+.add-task i{
+  background-color: #522B5B;
+  color: #DFB6B2;
+  border-radius: 10px;
+  width: 5%;
+  height: 40px;
+  padding-top: 10px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.add-task i:hover{
+  background-color: #854F6C;
+  transform: skew(-2deg,-2deg);
+}
+
+.task-content{
+  text-align: left;
+  padding-left: 15px;
+}
+
+.task-content > span{
+  display: block;
+  width: 90%;
+ }
+
+.no-task-span{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:#2b124c94;
+  font-size: 20px;
+  background-color: #DFB6B2;
+  padding:7px;
+}
+
+
+.task-box{
+  font-size: 20px;
+  background-color: #DFB6B2;
+  padding:7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:#2b124c;
+  position: relative;
+  font-weight: bold;
+
+}
+
+.delete{
+  position: absolute;
+  top: 7px;
+  left: 70%;
+  background-color:#854F6C;
+  padding: 0 4px 0;
+  border-radius: 10px;
+  font-weight: normal;
+}
+
+.delete:hover{
+  background-color: rgba(153, 49, 49, 0.877);
+  cursor: pointer;
+}
+
+.tasks-status{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  color:#2b124c;
+  font-weight: bold;
+}
+
+.tasks-count span{
+  color: #DFB6B2;
+  background-color: #854F6C;
+  padding:5px;
+  border-radius: 5px;
+
+}
+
+.tasks-complete span{
+  background-color:#522B5B;
+  color: #DFB6B2;
+  padding:5px;
+  border-radius: 5px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container{
+    width: 400px;
+  }
+  #list{
+    width: 500px;
+  }
+
+  .delete{
+    left: 80%;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container{
+    width: 600px;
+  }
+
+  #list{
+    width: 750px;
+  }
+
+  .delete{
+    left: 90%;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
